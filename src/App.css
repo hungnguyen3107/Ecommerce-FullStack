@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
-}
+*{margin: 0px; padding: 0px;}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body{font-family: "Lato", sans-serif; font-size: 14px;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.bg-blue{background-color: #2bace6;}
+
+@media (min-width: 1300px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1200px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headerWrapper .top-strip {padding: 8px 0px; }
+.headerWrapper .top-strip p{color: white; font-size: 12px; font-weight: 500; }
+.headerWrapper .header {
+  width: 100%; 
+  height: auto;
+  padding: 25px 0px;
+  margin: 0;
 }
+.logoWrapper img{ width: 100%; }
+.headerWrapper .header .part2 .countryDrop{width: 170px; height: 60px; min-width: 170px; color: #000 !important; border: 1px solid rgba(0,0,0,0.2) !important; border-radius: 7px !important;
+padding: 10px 15px !important;}
+.headerWrapper .header .part2 .countryDrop{text-align: left; justify-content: flex-start !important;}
+.headerWrapper .header .part2 .countryDrop .lable{font-size: 12px !important; text-transform: capitalize !important; color: rgba(0,0,0,0.4) !important; line-height: 16px;}
+.headerWrapper .header .part2 .countryDrop .name{font-size: 14px !important; text-transform: capitalize !important; color: #2bace6 !important; font-weight: 700; line-height: 16px}
+.headerWrapper .header .part2 .countryDrop span.ml-auto svg{opacity: 0.7;}
+header .headerSearch{background: #e7e7e7; height: 60px; padding: 5px; width: 60%; position: relative; border-radius: 5px; border: 1px, solid rgba(0,0,0,0.1)}
+header .headerSearch input{background: transparent !important; outline: none !important;
+font-size: 18px; color: rgba(0,0,0,0.7); width: 100%; height: 40px; border: 0px !important;
+padding: 0px 20px !important;}
+header .headerSearch input::-webkit-input-placeholder{color: rgba(0,0,0,0.6);}
+header .headerSearch Button{position: absolute; top: 10px; right: 15px; z-index: 100; min-width: 40px !important; height: 45px !important; width: 40px !important;
+border-radius: 50% !important; color: #000;}
+header .headerSearch Button svg{font-size: 25px;}
+header .part3 .circle{align-items: center; justify-content: center; min-width: 45px !important; height: 45px !important; width: 45px !important;border-radius: 50% !important; border: 1px solid rgba(0,0,0,0.1) !important; color: #000;}
+header .part3 .circle svg{font-size: 22px;}
+.cartTab .price{font-size: 18px; color: rgba(0,0,0,0.8); font-weight: 700;}
+.cartTab button{background: #fff1ee !important;}
+.cartTab button svg{color: #ea2b0f !important;}
+.cartTab .count{position: absolute; top: -6px; right: -4px; background: #ea2b0f;
+border-radius: 50%; color: #fff; width: 20px; height: 20px;}
 
-.App-link {
-  color: #61dafb;
-}
+nav .allCatTab{background: #2bbef9; padding: 8px 30px !important; border-radius: 30px !important;}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+nav .allCatTab *{color: #fff;}
+nav .allCatTab:hover{background: #2bbef9;}
+nav .allCatTab .text{font-weight: 600;}
